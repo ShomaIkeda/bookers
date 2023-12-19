@@ -1,0 +1,9 @@
+<div><%= flash[:notice] %></div>
+
+<p class=""><b>Title:</b><%= @book.title %></p>
+
+<p><b>Book:</b><%= @book.body %></p>
+
+<%= link_to "Edit","#{@book.id}/edit" %> 
+<span>|</span>
+<%= link_to "Back","/books" %>
